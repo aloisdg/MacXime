@@ -69,7 +69,6 @@ namespace MacXime
 		public static RegistryKey GetBaseKey()
 		{
 			return RegistryKey.OpenBaseKey(RegistryHive.LocalMachine,
-			    //ProcessorHelper.InternalCheckIsWow64()
 			    Environment.Is64BitOperatingSystem
 			    ? RegistryView.Registry64 : RegistryView.Registry32);
 		}

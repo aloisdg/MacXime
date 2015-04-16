@@ -40,7 +40,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ProcessorHelper.cs" />
     <Compile Include="Spoofer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
