@@ -72,5 +72,14 @@ namespace MacXime
 			    Environment.Is64BitOperatingSystem
 			    ? RegistryView.Registry64 : RegistryView.Registry32);
 		}
+
+		public static string GenerateMacAddress()
+		{
+			var random = new Random();
+			var buffer = new byte[6];
+			random.NextBytes(buffer);
+			var result = String.Concat(buffer.Select(x => x.ToString("X2") + ':'));
+			return result.TrimEnd(':');
+		}
 	}
 }
